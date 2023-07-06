@@ -1,7 +1,6 @@
-
-var nombre = document.getElementById("nombre")
-var mensaje = document.getElementById("mensaje")
-var botonenviar = document.getElementById("botonEnviar")
+var nombre = document.getElementById("nombre");
+var mensaje = document.getElementById("mensaje");
+var botonenviar = document.getElementById("botonEnviar");
 
 botonenviar.onclick = function(evento) {
     evento.preventDefault();
@@ -9,23 +8,26 @@ botonenviar.onclick = function(evento) {
     let valor_mensaje = mensaje.value
     console.log("el valor capturado es: " + nombre.value + " " + mensaje.value)
 }
-var foro_mensajes = document.getElementById ("foro_mensajes")
+var foro_mensajes = document.getElementById("foro_mensajes");
 
 botonenviar.addEventListener("click", function(evento) {
-    evento.preventDefault();
+  evento.preventDefault();
 
-    let elementonuevo_nombre = document.createElement("div")
-    elementonuevo_nombre.textContent = nombre.value
+  let valor_nombre = nombre.value;
+  let valor_mensaje = mensaje.value;
+  console.log("El valor capturado es: " + valor_nombre + " " + valor_mensaje);
 
-    let elementonuevo_mensaje = document.createElement("div")
-    elementonuevo_mensaje.textContent = mensaje.value
+  let elementonuevo_nombre = document.createElement("div");
+  elementonuevo_nombre.textContent = valor_nombre;
 
-    elementonuevo_nombre.style.fontWeight = "bold"
+  let elementonuevo_mensaje = document.createElement("div");
+  elementonuevo_mensaje.textContent = valor_mensaje;
 
-    foro_mensajes.appendChild(elementonuevo_nombre)
-    foro_mensajes.appendChild(elementonuevo_mensaje)
+  elementonuevo_nombre.style.fontWeight = "bold";
 
-    
-    nombre.value = ''
-    mensaje.value = ''
-}
+  foro_mensajes.appendChild(elementonuevo_nombre);
+  foro_mensajes.appendChild(elementonuevo_mensaje);
+
+  nombre.value = "";
+  mensaje.value = "";
+});
