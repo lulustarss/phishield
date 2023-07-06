@@ -12,7 +12,7 @@ function verificarRespuestas() {
   
   var divrespuestas = document.getElementById("respuestas_correctas")
 
-  if (aciertos == 4) {
+  if (aciertos == 5) {
     var textorespuestas = document.createTextNode("Número de aciertos: " + aciertos + ". ¡Felicidades!")
   } else {
     var textorespuestas = document.createTextNode("Número de aciertos: " + aciertos + ".")
