@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+
+/*--> Móviles*/
+@media screen and (min-width: 800px) {
+    .advertencia {
+        display: none;
+    }
+}
+
+
+header{
+    background-color: #4341a3;
+    color: #ebe3e4;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alignH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoH {
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+}
+  
+.h1Header {
+    margin: 10;
+    padding: 10;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: 500;
+    font-size: 6vh;
+}
+
+#foro-completo {
+    margin-top: 10vh;
+}
+
+nav {
+    padding-top: 20px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  
+/*Demás*/
+
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: #333;
+}
+
+h4 {
+    color: #666;
+}
+
+#chat {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+}
+
+.enviar {
+    background-color: #4341a3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+h3 {
+    color: #333;
+}
+
+#foro_mensajes {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#foro_mensajes p {
+    margin-bottom: 10px;
+}
