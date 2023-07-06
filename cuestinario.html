@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuestionario de Phishing</title>
+  <link rel="stylesheet" href="css/cuestionario.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <script src="js/verificar_respuestas.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+ 
+  <link rel="icon" type="image/png" href="https://iili.io/HibxHWx.png">
+</head>
+<body>
+  <header class="fixed-header">   
+    <div class="advertencia">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>ATENCIÓN:</strong> Este sitio no fue diseñado para dispositivos móviles, por lo que puede haber problemas con la visualización en pantallas pequeñas.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+    </div>
+        <div class="container-fluid">
+            <div class="logo-title-container">
+                <img class="logoH" src="https://iili.io/HibxD1p.png" alt="">
+                <a class="h1Header" href="index.html">PHISHIELD</a>
+              </div>
+          </div>
+          
+    </header>
+
+
+  <div id="cuestionario-completo">
+  <h1>Cuestionario de Phishing</h1>
+   
+  <div class="formulario">
+    <form>
+    <div>
+    <h2>1.</h2>
+    <span>¿Quiénes pueden ser víctimas de phishing?</span></div>
+    <input type="radio" name="pregunta1" value="a"> Empresarios<br>
+    <input type="radio" name="pregunta1" value="b"> Políticos<br>
+    <input type="radio" name="pregunta1" value="c"> Cualquier persona<br>
+    <input type="radio" name="pregunta1" value="d"> Todas son correctas<br> <br> <!-- verdadero -->
+    
+    <div>
+    <h2>2.</h2>
+    <span>¿Cuáles de estas opciones NO es uno de los medios por el cual se realiza el phishing?</span>
+    </div>
+    <input type="radio" name="pregunta2" value="a"> Correo electrónico con enlace fraudulento.<br>
+    <input type="radio" name="pregunta2" value="b"> URL auténtica desde enviada dirección de correo auténtica.<br>  <!-- verdadero -->
+    <input type="radio" name="pregunta2" value="c"> Llamada telefónica pidiendo información confidencial.<br>
+    <input type="radio" name="pregunta2" value="d"> Archivo malintencionado camuflado dentro de un archivo de confianza.<br> <br>
+    
+    <div>
+    <h2>3.</h2>
+    <span>Verdadero o Falso:</span>
+    </div>
+    <span>a. Es seguro compartir el PIN de seguridad en una página web.</span>
+    <br>
+    
+    <input type="radio" name="pregunta3a" value="verdadero"> Verdadero<br>
+    <input type="radio" name="pregunta3a" value="falso"> Falso<br>  <!-- verdadero -->
+    <br>
+    <span>b. Un antivirus puede ayudar en la prevención del phishing.</span>
+    <br>
+    <input type="radio" name="pregunta3b" value="verdadero"> Verdadero<br>  <!-- verdadero -->
+    <input type="radio" name="pregunta3b" value="falso"> Falso<br> <br>
+    
+    <div>
+    <h2>4.</h2>
+    <span>¿Qué hacer cuando recibimos un correo electrónico sospechoso de phishing?</span>
+    </div>
+    <input type="radio" name="pregunta4" value="a"> Responder al correo necesita datos confidenciales.<br>
+    <input type="radio" name="pregunta4" value="b"> Reenviarles el correo a mis contactos para anunciarles.<br>
+    <input type="radio" name="pregunta4" value="c"> Denunciar el correo en el <a class="enlace-denuncia" href="https://www.argentina.gob.ar/justicia/convosenlaweb/denuncia" target="_blank">área de denuncias de Con Vos en la Web.</a><br>
+    <input type="radio" name="pregunta4" value="d"> Borrar el correo y no hacer nada al respecto.<br><br>
+    
+    <!-- botón "Enviar" que invoca la función del archivo java -->
+    <button type="button" onclick="verificarRespuestas()">Enviar</button>
+  </form>
+</div>
+  <div id="respuestas_correctas">
+  </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
