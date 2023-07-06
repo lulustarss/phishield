@@ -4,7 +4,7 @@ var mensaje = document.getElementById("mensaje")
 var botonenviar = document.getElementById("botonEnviar")
 
 botonenviar.onclick = function(evento) {
-    evento.preventDefault()
+    evento.preventDefault();
     let valor_nombre = nombre.value
     let valor_mensaje = mensaje.value
     console.log("el valor capturado es: " + nombre.value + " " + mensaje.value)
@@ -12,7 +12,7 @@ botonenviar.onclick = function(evento) {
 var foro_mensajes = document.getElementById ("foro_mensajes")
 
 botonenviar.addEventListener("click", function(evento) {
-    evento.preventDefault()
+    evento.preventDefault();
 
     let elementonuevo_nombre = document.createElement("div")
     elementonuevo_nombre.textContent = nombre.value
@@ -28,4 +28,4 @@ botonenviar.addEventListener("click", function(evento) {
     
     nombre.value = ''
     mensaje.value = ''
-});
+}
